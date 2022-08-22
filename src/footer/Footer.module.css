@@ -1,0 +1,20 @@
+.footerPage {
+    background-color: #ff7f0d;
+}
+
+.footerContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.squareContainer {
+    display: flex;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid;
+}

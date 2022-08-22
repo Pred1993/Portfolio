@@ -6,9 +6,9 @@ const Main = () => {
         <div className={style.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={style.text}>
-                    <span>HI THERE !</span>
-                    <h2> I'M IVCHENKO ARTSIOM</h2>
-                    <p> FRONTEND DEVELOPER</p>
+                    <span style={{'background': "yellow"}}>HI THERE !</span>
+                    <h2 style={{'background': "yellow"}}> I'M IVCHENKO ARTSIOM</h2>
+                    <p style={{'background': "yellow"}}> FRONTEND DEVELOPER</p>
                 </div>
                 <div className={style.photo}></div>
             </div>

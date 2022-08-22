@@ -5,13 +5,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.img {
-    height: 60px;
-    width: 60px;
-    background-color: #eab0b0;
+.imgContainer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://funart.pro/uploads/posts/2022-01/1641770011_1-funart-pro-p-zhivie-sobachki-zhivotnie-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .description{
     word-break: break-word;
+    background-color: yellow;
 }
