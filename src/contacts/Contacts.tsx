@@ -11,9 +11,10 @@ const Contacts = () => {
                     <input type="text"/>
                     <input type="text"/>
                     <textarea name="" id="" cols={30} rows={10}></textarea>
+                    <button type='submit' className={style.submitBtn}>Send</button>
                 </form>
-                <div className={style.linkContainer}><a href="">send
-                </a></div>
+                {/*<div className={style.linkContainer}><a href="">send*/}
+                {/*</a></div>*/}
             </div>
         </div>
     );
