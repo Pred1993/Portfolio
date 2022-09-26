@@ -1,19 +1,22 @@
 import React from 'react';
-import style from './Project.module.css'
+import styles from './Project.module.css'
 
 type ProjectPropsType = {
     title: string
     description: string
+    style: any
 }
-const Project = ({title, description}: ProjectPropsType) => {
+const Project = ({title, description, style}: ProjectPropsType) => {
     return (
-        <div className={style.project}>
-            <div className={style.imgContainer}>
-                <a href="">See
+        <div className={styles.project}>
+            <div className={styles.imgContainer} style={style}>
+                <a className={styles.viewButton} href="">Look
                 </a>
             </div>
-            <h3 style={{'background': "yellow"}}>{title}</h3>
-            <span className={style.description}>{description}</span>
+            <div className={styles.projectInfo}>
+                <h3 className={styles.projectTitle}>{title}</h3>
+                <span className={styles.description}>{description}</span>
+            </div>
         </div>
     );
 };

@@ -1,26 +1,65 @@
 .project {
-    width: 350px;
-    background-color: white;
+    width: 600px;
+    background-color: #111;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    /*text-align: center;*/
     padding: 20px;
     box-sizing: border-box;
 }
+
 .imgContainer {
-    height: 200px;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://funart.pro/uploads/posts/2022-01/1641770011_1-funart-pro-p-zhivie-sobachki-zhivotnie-1.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.imgContainer::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+}
+.viewButton {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    text-decoration: none;
 }
 
-.description{
-    word-break: break-word;
-    background-color: yellow;
+.projectInfo {
+    background-color: #252525;
+    padding: 20px 25px 25px 25px;
+    border-radius: 0 0 5px 5px;
 }
+.projectTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    margin: 0px 0px 8px;
+}
+.description{
+    font-family: 'Poppins', sans-serif;
+    word-break: break-word;
+    margin: 15px 0 5px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
 

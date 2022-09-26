@@ -16,10 +16,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*margin-top: 20px;*/
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1500px) {
     .projects {
         justify-content: center;
     }

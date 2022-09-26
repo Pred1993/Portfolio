@@ -16,15 +16,27 @@
 .span{
     color:#ffb400
 }
+.title::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 1.2px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
 
-/*.title::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    background: #4e93e6;*/
-/*    width: 55px;*/
-/*    height: 1px;*/
-/*    bottom: -20px;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, 50%);*/
+}
 
-/*}*/
+.title::after {
+    content: '';
+    position: absolute;
+    background: #ffb400;
+    width: 55px;
+    height: 1.2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+
