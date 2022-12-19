@@ -1,6 +1,8 @@
 .skillsBlock {
     /*min-height: 100vh;*/
     background-color: rgba(105, 98, 98, 0.95);
+    position: relative;
+    z-index: 20;
 }
 
 .skillsContainer {
@@ -19,5 +21,7 @@
 }
 
 @media screen and (max-width:625px) {
-    .skills { justify-content: center}
+    .skills {
+        justify-content: center
+    }
 }

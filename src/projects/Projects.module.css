@@ -1,7 +1,7 @@
 .projectsBlock {
     min-height: 100vh;
     background-color: #111;
-
+    position: relative;
 }
 
 .projectsContainer {
@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 @media screen and (max-width: 1500px) {

@@ -9,17 +9,17 @@ import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 
 const App = () => {
-    return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <HireMe/>
-            <Contacts/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header/>
+      <Main/>
+      <Skills/>
+      <Projects/>
+      <HireMe/>
+      <Contacts/>
+      <Footer/>
+    </div>
+  );
 }
 
 export default App;

@@ -1,19 +1,26 @@
 import React from 'react';
-import style from './Main.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import styles from './Main.module.css'
+import photoImages from "../assets/image/photo.png";
+
+
 const Main = () => {
-    return (
-        <div className={style.mainBlock}>
-            <div className={`${styleContainer.container} ${style.mainContainer}`}>
-                <div className={style.text}>
-                    <span style={{'background': "yellow"}}>HI THERE !</span>
-                    <h2 style={{'background': "yellow"}}> I'M IVCHENKO ARTSIOM</h2>
-                    <p style={{'background': "yellow"}}> FRONTEND DEVELOPER</p>
-                </div>
-                <div className={style.photo}></div>
-            </div>
+  const photo = {
+    backgroundImage: `url(${photoImages})`,
+  };
+  return (
+      <div className={styles.mainBlock}>
+        <div className={styles.figure}></div>
+        <div className={styles.mainContainer}>
+          <div className={styles.photo} style={photo}></div>
+          <div className={styles.text}>
+            <h1 className={styles.name}> I'M IVCHENKO ARTSIOM. <span>FRONTEND DEVELOPER</span></h1>
+            <p>Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros
+              congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas
+              ligula lectus magna sem. '</p>
+          </div>
         </div>
-    );
+      </div>
+  );
 };
 
 export default Main;
