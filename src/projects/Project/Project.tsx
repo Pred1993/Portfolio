@@ -1,16 +1,17 @@
 import React from 'react';
-import styles from './Project.module.css'
+import styles from './Project.module.scss';
 
 type ProjectPropsType = {
-  title: string
-  description: string
-  style: any
-}
-const Project = ({title, description, style}: ProjectPropsType) => {
+  title: string;
+  description: string;
+  style: any;
+};
+const Project = ({ title, description, style }: ProjectPropsType) => {
   return (
     <div className={styles.project}>
       <div className={styles.imgContainer} style={style}>
-        <a className={styles.viewButton} href="">Look
+        <a className={styles.viewButton} href="">
+          Look
         </a>
       </div>
       <div className={styles.projectInfo}>

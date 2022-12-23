@@ -1,20 +1,20 @@
 .contactsPage {
-    /*min-height: 100vh;*/
-    background-color: rgba(210, 152, 152, 0.95);
+  /*min-height: 100vh;*/
+  background-color: rgba(210, 152, 152, 0.95);
 }
 
 .contactsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .formContainer {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    border: 1px solid;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
 }
 
 /*.formContainer input, .formContainer textarea {*/
@@ -31,12 +31,12 @@
 /*    align-items: center;*/
 /*}*/
 .submitBtn {
-    padding: 10px 20px;
-    background-color: yellow;
+  padding: 10px 20px;
+  background-color: yellow;
 }
 
 @media screen and (max-width: 500px) {
-    .formContainer{
-        width: 100%;
-    }
+  .formContainer {
+    width: 100%;
+  }
 }
