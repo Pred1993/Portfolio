@@ -1,14 +1,17 @@
-import React from 'react';
-import style from './Nav.module.css';
-
-const Nav = () => {
+import React, {FC} from 'react';
+import styles from './Nav.module.scss';
+type NavType = {
+  arr: string[]
+}
+const Nav: FC<NavType> = ({arr}) => {
   return (
-    <div className={style.nav}>
-      <a href="">Main</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Contacts</a>
-    </div>
+    <ul className={styles.nav}>
+      {arr.map((el, index) => {
+        return <li key={index} className={styles.list}>
+          <a href="">{el}</a>
+        </li>
+      })}
+    </ul>
   );
 };
 

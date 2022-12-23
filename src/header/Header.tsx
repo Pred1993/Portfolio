@@ -1,11 +1,11 @@
 import React from 'react';
-import style from './Header.module.css';
+import style from './Header.module.scss';
 import Nav from '../nav/Nav';
-
+const arrNav = ['Main', 'Skills', 'Projects', 'Contacts']
 const Header = () => {
   return (
     <div className={style.header}>
-      <Nav />
+      <Nav arr={arrNav}/>
     </div>
   );
 };

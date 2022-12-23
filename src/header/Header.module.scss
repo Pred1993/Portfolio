@@ -1,0 +1,11 @@
+@import "src/common/sass/variables";
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+}

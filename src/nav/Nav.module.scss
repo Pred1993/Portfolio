@@ -1,0 +1,21 @@
+@import "src/common/sass/variables";
+@import "src/common/sass/mixin";
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+
+  .list {
+    margin-right: 34px;
+
+    & a {
+      text-decoration: none;
+      @include text(20px, 300, $secondFontFamily, $textColor);
+    }
+
+    &:last-child {
+      margin-right: 0px
+    }
+  }
+}

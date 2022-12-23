@@ -5,27 +5,47 @@ import Skill from './skill/Skill';
 import Title from '../common/components/Title/Title';
 import Portfolio from "../common/components/Portfolio/Portfolio";
 
+const skills = {
+  'part1': [
+    {name: 'JS/TS', progress: '85%'},
+    {name: 'HTML', progress: '80%'},
+    {name: 'CSS/SCSS/BEM', progress: '84%'},
+    {name: 'React/Redux', progress: '81%'},
+  ],
+  'part2': [
+    {name: 'GIT/GITHUB', progress: '75%'},
+    {name: 'TDD/STORYBOOK', progress: '85%'},
+    {name: 'Axios/Postman', progress: '83%'},
+    {name: 'Material-UI/Formik', progress: '85%'},
+  ]
+}
 const Skills = () => {
   return (
     <div className={styles.skillsBlock}>
       <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
-        <Portfolio/>
+        <Portfolio name={'Ability'}/>
         <Title textPart1={'my '} textPart2={'skills'}/>
         <div className={styles.skills}>
           <div className={styles.part1}>
-            <Skill title={'JS/TS'} description={'85%'}/>
-            <Skill title={'HTML'} description={'80%'}/>
-            <Skill title={'CSS/SCSS/BEM'} description={'84%'}/>
+            {skills.part1.map((el, index) => {
+              const progressStyle = {
+                width: el.progress,
+              };
+              return <Skill key={index} title={el.name} description={el.progress} style={progressStyle}/>
+            })}
           </div>
           <div className={styles.part2}>
-            <Skill title={'GIT/GITHUB'} description={'81%'}/>
-            <Skill title={'TDD/STORYBOOK'} description={'75%'}/>
-            <Skill title={'React/Redux'} description={'85%'}/>
+            {skills.part2.map((el, index) => {
+              const progressStyle = {
+                width: el.progress,
+              };
+              return <Skill key={index} title={el.name} description={el.progress} style={progressStyle}/>
+            })}
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Skills;

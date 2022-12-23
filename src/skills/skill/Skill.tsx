@@ -4,8 +4,9 @@ import styles from './Skill.module.scss';
 type SkillPropsType = {
   title: string;
   description: string;
+  style: any
 };
-const Skill = ({title, description}: SkillPropsType) => {
+const Skill = ({title, description, style}: SkillPropsType) => {
   return (
     <div className={styles.skill}>
       <div className={styles.titleContainer}>
@@ -13,7 +14,7 @@ const Skill = ({title, description}: SkillPropsType) => {
         <span className={styles.description}>{description}</span>
       </div>
       <div className={styles.line}>
-        <div className={styles.progressLine}></div>
+        <div className={styles.progressLine} style={style}></div>
       </div>
     </div>
   );

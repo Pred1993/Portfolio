@@ -1,9 +1,0 @@
-.header {
-  height: 80px;
-  background-color: #ff7f0d;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  z-index: 10;
-}

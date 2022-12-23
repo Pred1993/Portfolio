@@ -13,7 +13,7 @@ const Main = () => {
         <div className={styles.text}>
           <h1 className={styles.name}>
             {' '}
-            I'M IVCHENKO ARTSIOM. <span>FRONTEND DEVELOPER</span>
+            I'M IUCHANKA ARTSIOM. <span>FRONTEND DEVELOPER</span>
           </h1>
           <p>
             Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros

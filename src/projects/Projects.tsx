@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div className={styles.projectsBlock}>
       <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-        <Portfolio />
+        <Portfolio name={'Portfolio'} />
         <Title textPart1={'my '} textPart2={'projects'} />
         <div className={styles.projects}>
           <Project

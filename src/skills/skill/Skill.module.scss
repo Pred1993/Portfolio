@@ -1,5 +1,5 @@
 @import "../../common/sass/variables.sass";
-
+@import "./src/common/sass/mixin";
 .skill {
   width: 100%;
   display: flex;
@@ -12,12 +12,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
     .title {
-      color: $textColor;
+      @include text(20px, 300, $secondFontFamily, $textColor);
     }
     .description {
-      word-break: break-word;
-      color: $textColor;
+      @include text(20px, 300, $secondFontFamily, $textColor)
     }
   }
   .line {
@@ -29,7 +29,6 @@
     overflow: visible;
     .progressLine {
       background-color: $secondColor;
-      width: 80%;
       height: 9px;
     }
   }

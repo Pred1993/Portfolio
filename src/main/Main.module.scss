@@ -2,11 +2,13 @@
 @import "../common/sass/mixin";
 .mainBlock {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   background-color: $bgColor;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 80px;
+  min-height: 700px;
   .mainContainer {
     width: 100%;
     margin: 0 auto;
