@@ -1,0 +1,24 @@
+@import "src/common/sass/variables";
+@import "src/common/sass/mixin";
+.hireMeBlock {
+  min-height: 50vh;
+  background-color: $bgColor;
+  .hireMeContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    .linkContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        @include text(20px, 300, $secondFontFamily, $textColor);
+      }
+    }
+  }
+}
+
+
+
+
