@@ -3,17 +3,31 @@
 .hireMeBlock {
   min-height: 50vh;
   background-color: $bgColor;
+  display: flex;
+  align-items: center;
   .hireMeContainer {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     justify-content: space-between;
     .linkContainer {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      margin-top: 20px;
       & a {
         text-decoration: none;
         @include text(20px, 300, $secondFontFamily, $textColor);
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        background: $secondColor;
+        width: 120%;
+        height: 10px;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 50%);
       }
     }
   }

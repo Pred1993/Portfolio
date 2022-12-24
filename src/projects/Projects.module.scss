@@ -4,6 +4,8 @@
   min-height: 100vh;
   background-color: $bgColor;
   position: relative;
+  display: flex;
+  align-items: center;
 
   .projectsContainer {
     flex-direction: column;

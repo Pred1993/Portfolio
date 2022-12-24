@@ -3,7 +3,7 @@
   margin-bottom: 30px;
   line-height: 1.2;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color: $textColor;
   text-transform: uppercase;
   position: relative;
   & h2 {
@@ -12,13 +12,13 @@
     font-size: 36px;
     font-weight: 300;
     & span {
-      color: #ffb400;
+      color: $secondColor;
     }
   }
   &::before {
     content: '';
     position: absolute;
-    background: #fff;
+    background: $textColor;
     width: 100px;
     height: 1.2px;
     bottom: -10px;
@@ -28,7 +28,7 @@
   &::after {
     content: '';
     position: absolute;
-    background: #ffb400;
+    background: $secondColor;
     width: 55px;
     height: 1.2px;
     bottom: -20px;

@@ -1,12 +1,15 @@
 import React from 'react';
-import style from './Contacts.module.css';
+import style from './Contacts.module.scss';
 import styleContainer from '../common/styles/Container.module.scss';
+import Portfolio from "../common/components/Portfolio/Portfolio";
+import Title from "../common/components/Title/Title";
 
 const Contacts = () => {
   return (
     <div className={style.contactsPage}>
       <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-        <h2 style={{ background: 'yellow' }}>My contacts</h2>
+        <Portfolio name={'Contacts'} />
+        <Title textPart1={'My '} textPart2={'contacts'} />
         <form className={style.formContainer}>
           <input type="text" />
           <input type="text" />

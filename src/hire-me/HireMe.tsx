@@ -11,7 +11,7 @@ const HireMe = () => {
       <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
         <Portfolio name={'Freelancer'}/>
         <Title textPart1={'Available '} textPart2={'for hire'}/>
-        <SuperButton>
+        <SuperButton style={{'marginTop': '20px'}}>
           Download CV
         </SuperButton>
         <div className={style.linkContainer}>
