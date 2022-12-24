@@ -15,7 +15,7 @@ const Main = () => {
             {' '}
             I'M IUCHANKA ARTSIOM. <span>FRONTEND DEVELOPER</span>
           </h1>
-          <p>
+          <p className={styles.textDescription}>
             Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros
             congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula
             lectus magna sem. '

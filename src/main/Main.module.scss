@@ -1,5 +1,6 @@
 @import "../common/sass/variables";
 @import "../common/sass/mixin";
+
 .mainBlock {
   position: relative;
   min-height: calc(100vh - 80px);
@@ -9,6 +10,7 @@
   justify-content: center;
   padding-top: 80px;
   min-height: 700px;
+
   .mainContainer {
     width: 100%;
     margin: 0 auto;
@@ -17,13 +19,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    & p {
-      @include text(16px, 400, $secondFontFamily, $textColor);
-      line-height: 35px;
-      text-align: left;
-      position: relative;
-      z-index: 20;
-    }
+
+
     .figure {
       position: absolute;
       height: 210%;
@@ -32,7 +29,11 @@
       transform: rotate(-15deg);
       background-color: $secondColor;
       z-index: 1;
+      @media screen and (max-width: 991px) {
+        left: -63%;
+      }
     }
+
     .photo {
       height: 570px;
       width: 100%;
@@ -40,11 +41,16 @@
       border-radius: 30px;
       position: relative;
       z-index: 20;
+      @media screen and (max-width: 991px) {
+        margin-top: 50px;
+      }
     }
+
     .text {
       width: 600px;
       text-align: left;
       padding: 20px;
+
       .name {
         margin: 0;
         padding: 0;
@@ -53,13 +59,34 @@
         line-height: 1.2;
         text-transform: uppercase;
         z-index: 20;
+
         & span {
           color: $textColor;
         }
+
+        @media screen and (max-width: 991px) {
+          @include text(46px, 700, $secondFontFamily, $textColor)
+        }
+      }
+
+      .textDescription {
+        @include text(16px, 400, $secondFontFamily, $textColor);
+        line-height: 35px;
+        text-align: left;
+        position: relative;
+        z-index: 20;
+        @media screen and (max-width: 1199px) {
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 1199px) {
+        text-align: center;
       }
     }
-    @media screen and (max-width: 800px) {
-        justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
     }
   }
 }
