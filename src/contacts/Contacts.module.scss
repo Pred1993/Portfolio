@@ -1,31 +1,60 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
+
 .contactsPage {
-  /*min-height: 100vh;*/
+  min-height: 75vh;
   background-color: $bgColor;
+  display: flex;
+  align-items: center;
+
   .contactsContainer {
+    height: 70vh;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     .formContainer {
+      height: 65%;
       width: 50%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      border: 1px solid;
-      .submitBtn {
-        padding: 10px 20px;
-        background-color: yellow;
+      justify-content: space-around;
+
+      .name {
+        background-color: $bgSecondColor;
+        height: 15%;
+        margin-bottom: 10px;
+        border: 1px solid $textColor;
+        @include text(14px, 300, $secondFontFamily, $textColor);
       }
+
+      .email {
+        background-color: $bgSecondColor;
+        height: 15%;
+        margin-bottom: 10px;
+        border: 1px solid $textColor;
+        @include text(14px, 300, $secondFontFamily, $textColor)
+      }
+
+      .message {
+        background-color: $bgSecondColor;
+        height: 50%;
+        margin-bottom: 30px;
+        border: 1px solid $textColor;
+        resize: none;
+        @include text(14px, 300, $secondFontFamily, $textColor)
+      }
+
+      .submitBtn {
+        text-align: center;
+      }
+
       @media screen and (max-width: 500px) {
-          width: 100%;
+        width: 100%;
       }
     }
   }
 }
-
-
-
 
 
 /*.formContainer input, .formContainer textarea {*/
