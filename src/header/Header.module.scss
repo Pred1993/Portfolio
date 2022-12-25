@@ -8,4 +8,50 @@
   align-items: center;
   position: fixed;
   z-index: 50;
+  .hamburger {
+    cursor: pointer;
+    margin-right: 40px;
+    height: 14px;
+    z-index: 100;
+    width: 30px;
+    @media screen and (max-width: 767px) {
+      span {
+        height: 2px;
+        width: 100%;
+        display: block;
+        background-color: $textColor;
+        margin-bottom: 4px;
+        transition: 1.5s all;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .cross {
+    cursor: pointer;
+    margin-right: 40px;
+    height: 14px;
+    z-index: 100;
+    width: 30px;
+    @media screen and (max-width: 767px) {
+      span {
+        height: 2px;
+        width: 100%;
+        display: block;
+        background-color: $textColor;
+        margin-bottom: -2px;
+        transition: 2s all;
+        &:nth-child(1) {
+          transform: translateY(6px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(6px) rotate(45deg);
+        }
+      }
+    }
+  }
 }
