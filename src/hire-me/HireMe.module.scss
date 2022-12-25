@@ -1,14 +1,15 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
 .hireMeBlock {
-  min-height: 50vh;
+  min-height: 40vh;
   background-color: $bgColor;
   display: flex;
   align-items: center;
+  justify-content: center;
   .hireMeContainer {
     width: 80%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     .linkContainer {
       display: flex;
       justify-content: center;
@@ -16,16 +17,18 @@
       position: relative;
       margin-top: 20px;
       & a {
+        margin-bottom: 10px;
         text-decoration: none;
         @include text(20px, 300, $secondFontFamily, $textColor);
       }
       &::before {
+        margin-bottom: 10px;
         content: '';
         position: absolute;
         background: $secondColor;
         width: 120%;
         height: 10px;
-        bottom: 0px;
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
       }

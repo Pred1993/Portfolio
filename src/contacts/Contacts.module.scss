@@ -5,15 +5,15 @@
   min-height: 75vh;
   background-color: $bgColor;
   display: flex;
-  align-items: center;
 
   .contactsContainer {
-    height: 70vh;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
     .formContainer {
+      margin-top: 10px;
       height: 65%;
       width: 50%;
       display: flex;
@@ -51,6 +51,9 @@
 
       @media screen and (max-width: 767px) {
         width: 60%;
+      }
+      @media screen and (max-width: 575px) {
+        width: 80%;
       }
     }
   }

@@ -1,18 +1,21 @@
-@import "../../sass/variables";
+@import "src/common/sass/variables";
+@import "src/common/sass/mixin";
 .title {
   margin-bottom: 30px;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
-  color: $textColor;
   text-transform: uppercase;
   position: relative;
+
   & h2 {
-    margin: 0;
-    margin-top: 55px;
+    @include text(36px, 300, $secondFontFamily, $textColor);
+    margin: 55px 0 0 0;
     font-size: 36px;
     font-weight: 300;
     & span {
-      color: $secondColor;
+      @include text(36px, 300, $secondFontFamily, $secondColor);
+    }
+    @media screen and (max-width: 767px) {
+      margin: 47px 0 0 0;
     }
   }
   &::before {

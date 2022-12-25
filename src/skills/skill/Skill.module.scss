@@ -13,11 +13,20 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 5px;
+    }
     .title {
       @include text(20px, 300, $secondFontFamily, $textColor);
+      @media screen and (max-width: 767px) {
+        @include text(15px, 300, $secondFontFamily, $textColor);
+      }
     }
     .description {
-      @include text(20px, 300, $secondFontFamily, $textColor)
+      @include text(20px, 300, $secondFontFamily, $textColor);
+      @media screen and (max-width: 767px) {
+        @include text(15px, 300, $secondFontFamily, $textColor);
+      }
     }
   }
   .line {

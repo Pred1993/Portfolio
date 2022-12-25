@@ -3,6 +3,7 @@
 
 .footerPage {
   background-color: $bgColor;
+  margin-top: -20px;
 
   .footerContainer {
     flex-direction: column;
@@ -16,6 +17,10 @@
       @media screen and (max-width: 991px) {
         width: 50%;
       }
+      @media screen and (max-width: 991px) {
+        width: 70%;
+      }
+
       .square {
         display: flex;
         justify-content: center;
