@@ -8,27 +8,6 @@
   .hireMeContainer {
     width: 80%;
     @include flex(flex, column, space-evenly, center);
-    .linkContainer {
-      @include flex(flex, row, center, center);
-      position: relative;
-      margin-top: 20px;
-      & a {
-        margin-bottom: 10px;
-        text-decoration: none;
-        @include text(20px, 300, $secondFontFamily, $textColor);
-      }
-      &::before {
-        margin-bottom: 10px;
-        content: '';
-        position: absolute;
-        background: $secondColor;
-        width: 120%;
-        height: 10px;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 50%);
-      }
-    }
   }
 }
 

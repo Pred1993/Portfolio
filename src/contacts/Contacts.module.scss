@@ -12,6 +12,7 @@
     @media screen and (max-width: 1500px) {
       margin-bottom: 10px;
     }
+
     .formContainer {
       margin-top: 10px;
       height: 100%;
@@ -21,7 +22,7 @@
       .name {
         background-color: $bgSecondColor;
         height: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         border: 1px solid $textColor;
         @include text(14px, 300, $secondFontFamily, $textColor);
       }
@@ -29,7 +30,7 @@
       .email {
         background-color: $bgSecondColor;
         height: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         border: 1px solid $textColor;
         @include text(14px, 300, $secondFontFamily, $textColor)
       }
@@ -37,7 +38,7 @@
       .message {
         background-color: $bgSecondColor;
         height: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         border: 1px solid $textColor;
         resize: none;
         @include text(14px, 300, $secondFontFamily, $textColor)
@@ -47,12 +48,17 @@
         text-align: center;
       }
 
+      .errors {
+        @include text(12px, 300, $secondFontFamily, $textColor);
+      }
+
       @media screen and (max-width: 767px) {
         width: 60%;
       }
       @media screen and (max-width: 575px) {
         width: 80%;
       }
+
     }
   }
 }

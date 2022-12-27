@@ -1,0 +1,35 @@
+@import "src/common/sass/mixin";
+@import "src/common/sass/variables";
+
+.link {
+  @include flex(flex, row, center, center);
+  @include text(20px, 300, $secondFontFamily, $textColor);
+  border: none;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $secondColor;
+    width: 120%;
+    height: 10px;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $textColor;
+
+    &::after {
+      width: 140%;
+      height: 32px;
+      transition: all 0.3s;
+    }
+  }
+}

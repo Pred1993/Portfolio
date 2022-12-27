@@ -1,11 +1,10 @@
 @import "src/common/sass/variables";
+@import "src/common/sass/mixin";
 .container {
   //border: 1px solid red;
+  @include flex(flex, row, space-between, center);
   height: 100%;
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }

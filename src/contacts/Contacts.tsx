@@ -11,12 +11,14 @@ import SuperInput from "../common/components/SuperInput/SuperInput";
 const Contacts = () => {
   const formik = useFormik({
     initialValues: {
-      name: '',
+      firstName: '',
       email: '',
       message: '',
     },
     validationSchema: Yup.object({
-      email: Yup.string().email('Invalid email address').required('Required')
+      email: Yup.string().email('Invalid email address').required('Required'),
+      firstName: Yup.string().required('Required'),
+      message: Yup.string().required('Required'),
     }),
     onSubmit: (values) => {
       console.log(values)
@@ -29,41 +31,31 @@ const Contacts = () => {
         <Title textPart1={'My '} textPart2={'contacts'}/>
         <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
           <SuperInput className={styles.name} placeholder={'Name'}
-                      {...formik.getFieldProps('name')}
+                      {...formik.getFieldProps('firstName')}
           />
-          {/*{formik.touched.email && formik.errors.email && (*/}
-          {/*  <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.email}</div>*/}
-          {/*)}*/}
+          {formik.touched.firstName && formik.errors.firstName && (
+            <div className={styles.errors}>{formik.errors.firstName}</div>
+          )}
           <SuperInput className={styles.email} placeholder={'e-mail'}
                       {...formik.getFieldProps('email')}
           />
           {formik.touched.email && formik.errors.email && (
-            <div style={{color: 'red', fontSize: '12px'}}>{formik.errors.email}</div>
+            <div className={styles.errors}>{formik.errors.email}</div>
           )}
           <textarea className={styles.message} placeholder={'Message'}
                     {...formik.getFieldProps('message')}
           />
-          {/*{formik.touched.email && formik.errors.email && (*/}
-          {/*  <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.email}</div>*/}
-          {/*)}*/}
-          <div className={styles.submitBtn} >
-            <SuperButton style={{'width': '150px'}}
+          {formik.touched.message && formik.errors.message && (
+            <div className={styles.errors}>{formik.errors.message}</div>
+          )}
+          <div className={styles.submitBtn}>
+            <SuperButton style={{'width': '150px', marginTop: '20px'}}
                          type="submit"
             >
               Sign In
             </SuperButton>
           </div>
         </form>
-        {/*<form className={style.formContainer}>*/}
-        {/*  <input type="text" />*/}
-        {/*  <input type="text" />*/}
-        {/*  <textarea name="" id="" cols={30} rows={10}></textarea>*/}
-        {/*  <button type="submit" className={style.submitBtn}>*/}
-        {/*    Send*/}
-        {/*  </button>*/}
-        {/*</form>*/}
-        {/*<div className={style.linkContainer}><a href="">send*/}
-        {/*</a></div>*/}
       </div>
     </div>
   );

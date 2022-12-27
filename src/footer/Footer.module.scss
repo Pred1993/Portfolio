@@ -8,15 +8,20 @@
     @include flex(flex, column, flex-start, center);
 
     .squareContainer {
-      width: 40%;
+      width: 30%;
       @include flex(flex, row, space-between, normal);
+      @media screen and (max-width: 1199px) {
+        width: 40%;
+      }
       @media screen and (max-width: 991px) {
         width: 50%;
       }
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 767px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 575px) {
         width: 70%;
       }
-
       .square {
         @include flex(flex, row, center, center);
         width: 60px;
