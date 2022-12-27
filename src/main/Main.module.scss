@@ -3,11 +3,8 @@
 
 .mainBlock {
   position: relative;
-  min-height: calc(100vh - 80px);
   background-color: $bgColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, row, center, center);
   padding-top: 80px;
   min-height: 700px;
   @media screen and (max-width: 617px) {
@@ -17,12 +14,9 @@
   .mainContainer {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(flex, row, space-around, center);
     flex-wrap: wrap;
     position: relative;
-
 
     .figure {
       position: absolute;

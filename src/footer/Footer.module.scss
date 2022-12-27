@@ -5,14 +5,11 @@
   background-color: $bgColor;
 
   .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    @include flex(flex, column, flex-start, center);
 
     .squareContainer {
       width: 40%;
-      display: flex;
-      justify-content: space-between;
+      @include flex(flex, row, space-between, normal);
       @media screen and (max-width: 991px) {
         width: 50%;
       }
@@ -21,9 +18,7 @@
       }
 
       .square {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, row, center, center);
         width: 60px;
         height: 60px;
         border: 1px solid $textColor;

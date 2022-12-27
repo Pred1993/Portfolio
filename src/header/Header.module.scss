@@ -1,11 +1,10 @@
 @import "src/common/sass/variables";
+@import "src/common/sass/mixin";
 .header {
   height: 80px;
   width: 100%;
   background-color: $bgColor;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex(flex, row, flex-end, center);
   position: fixed;
   z-index: 50;
   .hamburger {

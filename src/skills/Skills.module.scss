@@ -1,19 +1,17 @@
-@import "../common/sass/variables";
+@import "src/common/sass/variables";
+@import "src/common/sass/mixin";
 .skillsBlock {
   background-color: $bgColor;
   position: relative;
   z-index: 20;
 
   .skillsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(flex, column, space-between, center);
 
     .skills {
       //border: 1px solid;
       width: 100%;
-      display: flex;
-      justify-content: space-around;
+      @include flex(flex, row, space-around, center);
       flex-wrap: wrap;
       margin-top: 20px;
       @media screen and (max-width: 625px) {

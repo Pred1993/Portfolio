@@ -6,9 +6,7 @@
   display: flex;
   margin-right: 40px;
   @media screen and (max-width: 767px) {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(flex, column, space-evenly, center);
     margin: 0;
     padding: 0;
     transition: 3s all;
@@ -37,9 +35,7 @@
   display: flex;
   margin-right: 40px;
   @media screen and (max-width: 767px) {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(flex, column, space-evenly, center);
     margin: 0;
     padding: 0;
     transition: 2s all;

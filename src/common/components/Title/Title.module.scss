@@ -1,8 +1,7 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
 .title {
-  margin-bottom: 30px;
-  margin-top: 41px;
+  margin: 41px 0 30px 0;
   line-height: 1.2;
   text-transform: uppercase;
   position: relative;
@@ -10,8 +9,6 @@
   & h2 {
     @include text(36px, 300, $secondFontFamily, $textColor);
     margin: 0;
-    font-size: 36px;
-    font-weight: 300;
     & span {
       @include text(36px, 300, $secondFontFamily, $secondColor);
     }

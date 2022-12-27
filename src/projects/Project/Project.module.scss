@@ -1,20 +1,16 @@
-@import "../../common/sass/variables";
-
+@import "src/common/sass/variables";
+@import "src/common/sass/mixin";
 .project {
   width: 600px;
   background-color: $bgColor;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include flex(flex, column, center, flex-start);
   padding: 20px;
   box-sizing: border-box;
 
   .imgContainer {
     height: 300px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, row, center, center);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +28,7 @@
     }
 
     .viewButton {
-      font-family: 'Poppins', sans-serif;
+      @include text(18px, 300, $secondFontFamily, $bgColor);
       position: relative;
       z-index: 1;
       background-color: $textColor;
@@ -46,22 +42,16 @@
     border-radius: 0 0 5px 5px;
 
     .projectTitle {
-      font-family: 'Poppins', sans-serif;
-      color: $textColor;
-      font-size: 20px;
-      font-weight: 600;
+      @include text(20px, 600, $secondFontFamily, $textColor);
       line-height: 26px;
       text-align: center;
-      margin: 0px 0px 8px;
+      margin: 0 0 8px;
     }
 
     .description {
-      font-family: 'Poppins', sans-serif;
+      @include text(15px, 500, $secondFontFamily, $textColor);
       word-break: break-word;
       margin: 15px 0 5px;
-      font-size: 15px;
-      color: $textColor;
-      font-weight: 500;
       line-height: 1.6;
     }
   }

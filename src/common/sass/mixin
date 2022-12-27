@@ -5,3 +5,10 @@
   font-family: $fontFamily;
   color: $color;
 }
+
+@mixin flex($display, $flexDirection, $justifyContent, $alignItems) {
+  display: $display;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
