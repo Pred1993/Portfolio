@@ -5,8 +5,8 @@ type PortfolioType = {
 }
 const Portfolio: FC<PortfolioType> = ({name}) => {
   return (
-    <div>
-      <span className={styles.portfolio}>{name}</span>
+    <div className={styles.portfolio}>
+      {name}
     </div>
   );
 };

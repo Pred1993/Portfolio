@@ -22,8 +22,8 @@ const skills = {
 const Skills = () => {
   return (
     <div className={styles.skillsBlock}>
+      <Portfolio name={'Ability'}/>
       <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
-        <Portfolio name={'Ability'}/>
         <Title textPart1={'my '} textPart2={'skills'}/>
         <div className={styles.skills}>
           <div className={styles.part1}>

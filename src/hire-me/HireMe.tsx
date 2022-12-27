@@ -8,8 +8,8 @@ import SuperButton from "../common/components/SuperButton/SuperButton";
 const HireMe = () => {
   return (
     <div className={style.hireMeBlock}>
+      <Portfolio name={'Freelancer'}/>
       <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
-        <Portfolio name={'Freelancer'}/>
         <Title textPart1={'Available '} textPart2={'for hire'}/>
         <SuperButton style={{'marginTop': '20px'}}>
           Download CV

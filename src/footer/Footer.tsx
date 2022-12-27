@@ -14,8 +14,8 @@ const arrIcons = [faLinkedin, faTelegram, faGithub, faVk]
 const Footer = () => {
   return (
     <div className={styles.footerPage}>
+      <Portfolio name={'Website'}/>
       <div className={`${styleContainer.container} ${styles.footerContainer}`}>
-        <Portfolio name={'Website'}/>
         <Title textPart1={'Iuchanka '} textPart2={'A.'}/>
         <div className={styles.squareContainer}>
           {arrIcons.map((el, index) => {

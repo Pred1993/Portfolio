@@ -24,8 +24,8 @@ const Contacts = () => {
   });
   return (
     <div className={styles.contactsPage}>
+      <Portfolio name={'Contacts'}/>
       <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
-        <Portfolio name={'Contacts'}/>
         <Title textPart1={'My '} textPart2={'contacts'}/>
         <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
           <SuperInput className={styles.name} placeholder={'Name'}

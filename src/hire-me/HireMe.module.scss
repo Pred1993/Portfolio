@@ -1,11 +1,10 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
 .hireMeBlock {
-  min-height: 40vh;
+  min-height: 35vh;
   background-color: $bgColor;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   .hireMeContainer {
     width: 80%;
     flex-direction: column;
