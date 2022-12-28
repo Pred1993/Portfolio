@@ -6,7 +6,7 @@ type NavType = {
 }
 const Nav: FC<NavType> = ({arr, active}) => {
   return (
-    <ul className={active ? styles.nawAppear : styles.nav}>
+    <ul className={active ? `${styles.common} ${styles.nawAppear}` : `${styles.common} ${styles.nav}`}>
       {arr.map((el, index) => {
         return <li key={index} className={styles.list}>
           <a href="">{el}</a>

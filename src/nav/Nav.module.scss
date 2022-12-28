@@ -1,7 +1,7 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
 
-.nav {
+.common {
   list-style: none;
   display: flex;
   margin-right: 40px;
@@ -9,10 +9,8 @@
     @include flex(flex, column, space-evenly, center);
     margin: 0;
     padding: 0;
-    transition: 3s all;
     position: fixed;
     top: 0;
-    right: -100%;
     height: 100vh;
     width: 200px;
     background-color: $secondColor;
@@ -30,34 +28,21 @@
   }
 }
 
-.nawAppear {
-  list-style: none;
-  display: flex;
-  margin-right: 40px;
+.nav {
   @media screen and (max-width: 767px) {
-    @include flex(flex, column, space-evenly, center);
-    margin: 0;
-    padding: 0;
+    transition: 3s all;
+    right: -100%;
+  }
+}
+
+.nawAppear {
+  @media screen and (max-width: 767px) {
     transition: 2s all;
-    height: 100vh;
-    width: 200px;
-    background-color: $secondColor;
-    position: fixed;
-    top: 0;
     right: 0;
   }
   .list {
-    margin-right: 34px;
     @media screen and (max-width: 767px) {
       margin-right: 0;
-    }
-    & a {
-      text-decoration: none;
-      @include text(20px, 300, $secondFontFamily, $textColor);
-    }
-
-    &:last-child {
-      margin-right: 0
     }
   }
 }

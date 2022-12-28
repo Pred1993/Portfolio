@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './Main.module.scss';
 import photoImages from '../assets/image/photoFinish.png';
+import {ParticleBackground} from "../ParticleBackground/ParticleBackground";
+
+
 
 const Main = () => {
   return (
     <div className={styles.mainBlock}>
+      <ParticleBackground/>
       <div className={styles.mainContainer}>
         <div className={styles.figure}></div>
         <div>

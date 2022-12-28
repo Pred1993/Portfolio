@@ -6,7 +6,7 @@ const Header = () => {
   const [active, setActive] = useState(false)
   return (
     <div className={styles.header}>
-      <div onClick={() => setActive(!active)} className={active ? styles.cross : styles.hamburger}>
+      <div onClick={() => setActive(!active)} className={active ? `${styles.common} ${styles.cross}` : `${styles.common} ${styles.hamburger}`}>
         <span></span>
         <span></span>
         <span></span>

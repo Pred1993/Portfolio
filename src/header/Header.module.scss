@@ -1,5 +1,6 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
+
 .header {
   height: 80px;
   width: 100%;
@@ -7,7 +8,7 @@
   @include flex(flex, row, flex-end, center);
   position: fixed;
   z-index: 50;
-  .hamburger {
+  .common {
     cursor: pointer;
     margin-right: 40px;
     height: 14px;
@@ -19,6 +20,12 @@
         width: 100%;
         display: block;
         background-color: $textColor;
+      }
+    }
+  }
+  .hamburger {
+    @media screen and (max-width: 767px) {
+      span {
         margin-bottom: 4px;
         transition: 1.5s all;
         &:last-child {
@@ -28,17 +35,8 @@
     }
   }
   .cross {
-    cursor: pointer;
-    margin-right: 40px;
-    height: 14px;
-    z-index: 100;
-    width: 30px;
     @media screen and (max-width: 767px) {
       span {
-        height: 2px;
-        width: 100%;
-        display: block;
-        background-color: $textColor;
         margin-bottom: -2px;
         transition: 2s all;
         &:nth-child(1) {

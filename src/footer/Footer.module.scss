@@ -3,6 +3,7 @@
 
 .footerPage {
   background-color: $bgColor;
+  position: relative;
 
   .footerContainer {
     @include flex(flex, column, flex-start, center);

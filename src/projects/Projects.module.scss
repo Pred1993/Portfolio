@@ -4,7 +4,8 @@
   min-height: 90vh;
   background-color: $bgColor;
   display: flex;
-  z-index: 100;
+  position: relative;
+  z-index: 20;
 
   .projectsContainer {
     @include flex(flex, column, center, center);
