@@ -1,7 +1,7 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
 .project {
-  width: 600px;
+  width: 550px;
   background-color: $bgColor;
   @include flex(flex, column, center, flex-start);
   padding: 20px;

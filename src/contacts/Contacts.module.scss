@@ -16,7 +16,7 @@
     .formContainer {
       margin-top: 10px;
       height: 100%;
-      width: 50%;
+      width: 600px;
       @include flex(flex, column, space-around, normal);
 
       .name {
@@ -53,10 +53,10 @@
       }
 
       @media screen and (max-width: 767px) {
-        width: 60%;
+        width: 500px;
       }
       @media screen and (max-width: 575px) {
-        width: 80%;
+        width: 400px;
       }
 
     }

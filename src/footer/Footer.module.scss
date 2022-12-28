@@ -38,6 +38,10 @@
         }
       }
     }
+    .footerSpan {
+      padding-top: 20px;
+      @include text(12px, 400, $secondFontFamily, $textColor);
+    }
   }
 }
 

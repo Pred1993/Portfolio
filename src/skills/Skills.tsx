@@ -4,7 +4,7 @@ import styleContainer from '../common/styles/Container.module.scss';
 import Skill from './skill/Skill';
 import Title from '../common/components/Title/Title';
 import Portfolio from "../common/components/Portfolio/Portfolio";
-
+import {Reveal} from "react-awesome-reveal";
 const skills = {
   'part1': [
     {name: 'JS/TS', progress: '85%'},
@@ -31,7 +31,7 @@ const Skills = () => {
               const progressStyle = {
                 width: el.progress,
               };
-              return <Skill key={index} title={el.name} description={el.progress} style={progressStyle}/>
+              return <Reveal cascade={true}><Skill key={index} title={el.name} description={el.progress} style={progressStyle}/></Reveal>
             })}
           </div>
           <div className={styles.part2}>
@@ -39,7 +39,7 @@ const Skills = () => {
               const progressStyle = {
                 width: el.progress,
               };
-              return <Skill key={index} title={el.name} description={el.progress} style={progressStyle}/>
+              return <Reveal cascade={true}><Skill key={index} title={el.name} description={el.progress} style={progressStyle}/></Reveal>
             })}
           </div>
         </div>

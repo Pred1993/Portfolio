@@ -16,24 +16,26 @@ const Projects = () => {
   };
   return (
     <div className={styles.projectsBlock}>
-      <Portfolio name={'Portfolio'} />
+      <Portfolio name={'Portfolio'}/>
       <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-        <Title textPart1={'my '} textPart2={'projects'} />
+        <Title textPart1={'my '} textPart2={'projects'}/>
         <div className={styles.projects}>
-          <Project
-            style={todolist}
-            title={'TodoList'}
-            description={
-              'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula lectus magna sem. '
-            }
-          />
-          <Project
+            {/*<Fade cascade={true} >*/}
+            <Project
+              style={todolist}
+              title={'TodoList'}
+              description={
+                'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula lectus magna sem. '
+              }
+            />
+            <Project
             style={cards}
             title={'Cards'}
             description={
               'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas.'
             }
           />
+          {/*</Fade>*/}
         </div>
       </div>
     </div>

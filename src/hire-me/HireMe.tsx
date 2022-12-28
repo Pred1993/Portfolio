@@ -5,6 +5,7 @@ import Title from "../common/components/Title/Title";
 import Portfolio from "../common/components/Portfolio/Portfolio";
 import SuperButton from "../common/components/SuperButton/SuperButton";
 import Link from "../common/components/Link/Link";
+import Reveal from "react-awesome-reveal";
 
 const HireMe = () => {
   return (
@@ -12,10 +13,12 @@ const HireMe = () => {
       <Portfolio name={'Freelancer'}/>
       <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
         <Title textPart1={'Available '} textPart2={'for hire'}/>
-        <SuperButton style={{'marginTop': '20px', 'marginBottom': '20px'}}>
+        <Reveal cascade={true}>
+          <SuperButton style={{'marginTop': '20px', 'marginBottom': '20px'}}>
           Download CV
         </SuperButton>
-        <Link text={'Here me'}/>
+          <Link text={'Here me'}/>
+        </Reveal>
       </div>
     </div>
   );

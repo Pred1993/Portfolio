@@ -8,6 +8,8 @@ import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faVk} from "@fortawesome/free-brands-svg-icons/faVk";
+import {Reveal} from "react-awesome-reveal";
+
 const arrIcons = [faLinkedin, faTelegram, faGithub, faVk]
 
 
@@ -19,15 +21,14 @@ const Footer = () => {
         <Title textPart1={'Iuchanka '} textPart2={'A.'}/>
         <div className={styles.squareContainer}>
           {arrIcons.map((el, index) => {
-            return <div className={styles.square}>
-              <FontAwesomeIcon className={styles.icon} icon={el} />
-            </div>
+            return <Reveal cascade={true}>
+              <div className={styles.square} key={index}>
+                <FontAwesomeIcon className={styles.icon} icon={el}/>
+              </div>
+            </Reveal>
           })}
         </div>
-        <span
-          style={{
-            paddingTop: '20px',
-          }}
+        <span className={styles.footerSpan}
         >
           © 2022 Все права защищены
         </span>
