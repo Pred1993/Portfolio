@@ -4,10 +4,9 @@ import photoImages from '../assets/image/photoFinish.png';
 import {ParticleBackground} from "../ParticleBackground/ParticleBackground";
 import Typewriter from 'typewriter-effect'
 
-
 const Main = () => {
   return (
-    <div className={styles.mainBlock}>
+    <div className={styles.mainBlock} id={'main'}>
       <ParticleBackground/>
       <div className={styles.mainContainer}>
         <div className={styles.figure}></div>

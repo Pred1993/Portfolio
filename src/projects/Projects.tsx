@@ -15,7 +15,7 @@ const Projects = () => {
     backgroundImage: `url(${todoImages})`,
   };
   return (
-    <div className={styles.projectsBlock}>
+    <div className={styles.projectsBlock} id={'projects'}>
       <Portfolio name={'Portfolio'}/>
       <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
         <Title textPart1={'my '} textPart2={'projects'}/>

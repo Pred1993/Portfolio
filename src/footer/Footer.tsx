@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <span className={styles.footerSpan}
         >
-          © 2022 Все права защищены
+          © 2022  All rights reserved.
         </span>
       </div>
     </div>

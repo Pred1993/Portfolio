@@ -1,7 +1,11 @@
 import React, {useState} from 'react';
 import styles from './Header.module.scss';
-import Nav from '../nav/Nav';
-const arrNav = ['Main', 'Skills', 'Projects', 'Contacts']
+import Nav from './nav/Nav';
+const arrNav = [{name: 'Main', link: '#main'}, {name: 'Skills', link: '#skills'}, {name: 'Projects', link: '#projects'}, {name: 'Contacts', link: '#contacts'}]
+export type NavObjectType = {
+  name: string
+  link: string
+}
 const Header = () => {
   const [active, setActive] = useState(false)
   return (

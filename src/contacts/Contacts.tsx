@@ -27,7 +27,7 @@ const Contacts = () => {
     },
   });
   return (
-    <div className={styles.contactsPage}>
+    <div className={styles.contactsPage} id={'contacts'}>
       <Portfolio name={'Contacts'}/>
         <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
           <Title textPart1={'My '} textPart2={'contacts'}/>

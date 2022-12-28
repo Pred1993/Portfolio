@@ -30,11 +30,16 @@
         border: 1px solid $textColor;
         border-radius: 50px;
         background-color: $bgColor;
+        cursor: pointer;
 
         .icon {
           font-size: 36px;
           color: $textColor;
-          background-color: $bgColor
+          background-color: $bgColor;
+        }
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.5s
         }
       }
     }

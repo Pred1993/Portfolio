@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
 import styles from './Nav.module.scss';
+import {NavObjectType} from "../Header";
 type NavType = {
-  arr: string[]
+  arr: Array<NavObjectType>
   active: boolean
 }
 const Nav: FC<NavType> = ({arr, active}) => {
@@ -9,7 +10,7 @@ const Nav: FC<NavType> = ({arr, active}) => {
     <ul className={active ? `${styles.common} ${styles.nawAppear}` : `${styles.common} ${styles.nav}`}>
       {arr.map((el, index) => {
         return <li key={index} className={styles.list}>
-          <a href="">{el}</a>
+          <a href={el.link}>{el.name}</a>
         </li>
       })}
     </ul>
