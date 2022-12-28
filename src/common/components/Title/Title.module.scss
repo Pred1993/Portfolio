@@ -11,6 +11,7 @@
     margin: 0;
     & span {
       @include text(36px, 300, $secondFontFamily, $secondColor);
+      display: inline-block;
     }
     @media screen and (max-width: 767px) {
       margin-top: -3px;

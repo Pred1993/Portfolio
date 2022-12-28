@@ -20,7 +20,6 @@ const Projects = () => {
       <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
         <Title textPart1={'my '} textPart2={'projects'}/>
         <div className={styles.projects}>
-            {/*<Fade cascade={true} >*/}
             <Project
               style={todolist}
               title={'TodoList'}
@@ -35,7 +34,6 @@ const Projects = () => {
               'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas.'
             }
           />
-          {/*</Fade>*/}
         </div>
       </div>
     </div>

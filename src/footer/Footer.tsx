@@ -9,7 +9,6 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faVk} from "@fortawesome/free-brands-svg-icons/faVk";
 import {Reveal} from "react-awesome-reveal";
-
 const arrIcons = [faLinkedin, faTelegram, faGithub, faVk]
 
 

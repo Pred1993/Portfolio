@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Main.module.scss';
 import photoImages from '../assets/image/photoFinish.png';
 import {ParticleBackground} from "../ParticleBackground/ParticleBackground";
-
+import Typewriter from 'typewriter-effect'
 
 
 const Main = () => {
@@ -16,8 +16,25 @@ const Main = () => {
         </div>
         <div className={styles.text}>
           <h1 className={styles.name}>
-            {' '}
-            I'M IUCHANKA ARTSIOM. <span>FRONTEND DEVELOPER</span>
+            I'M IUCHANKA ARTSIOM.
+            <span>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('Here we go!')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('FRONTEND DEVELOPER')
+                    .start()
+
+                }}
+                // options={{
+                //   strings: 'FRONTEND DEVELOPER',
+                //   autoStart: true,
+                //   loop: true,
+                // }}
+              />
+            </span>
           </h1>
           <p className={styles.textDescription}>
             Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros
