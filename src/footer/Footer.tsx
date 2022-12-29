@@ -9,8 +9,14 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faVk} from "@fortawesome/free-brands-svg-icons/faVk";
 import {Reveal} from "react-awesome-reveal";
-const arrIcons = [faLinkedin, faTelegram, faGithub, faVk]
 
+const arrIcons =
+  [
+    {icon: faLinkedin, link: 'https://www.linkedin.com/in/artsiom-iuchanka-7445aa257/'},
+    {icon: faTelegram, link: 'https://t.me/Pred1993'},
+    {icon: faGithub, link: 'https://github.com/Pred1993'},
+    {icon: faVk, link: 'https://vk.com/id90268118'}
+  ]
 
 const Footer = () => {
   return (
@@ -22,7 +28,10 @@ const Footer = () => {
           {arrIcons.map((el, index) => {
             return <Reveal cascade={true}>
               <div className={styles.square} key={index}>
-                <FontAwesomeIcon className={styles.icon} icon={el}/>
+                <a href={el.link} style={{textDecoration: 'none'}}>
+                  <FontAwesomeIcon className={styles.icon} icon={el.icon}
+                  />
+                </a>
               </div>
             </Reveal>
           })}
