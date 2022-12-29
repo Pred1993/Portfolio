@@ -8,13 +8,14 @@ type ProjectPropsType = {
   title: string;
   description: string;
   style: any;
+  link: string
 };
-const Project = ({ title, description, style }: ProjectPropsType) => {
+const Project = ({ title, description, style, link }: ProjectPropsType) => {
   return (
     <Fade delay={300}>
       <div className={styles.project}>
         <div className={styles.imgContainer} style={style}>
-          <Link text={'Look'}/>
+          <Link text={'Look'} link={link}/>
         </div>
         <div className={styles.projectInfo}>
           <h3 className={styles.projectTitle}>{title}</h3>

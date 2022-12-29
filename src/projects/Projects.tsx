@@ -20,14 +20,16 @@ const Projects = () => {
       <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
         <Title textPart1={'my '} textPart2={'projects'}/>
         <div className={styles.projects}>
-            <Project
-              style={todolist}
-              title={'TodoList'}
-              description={
-                'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula lectus magna sem. '
-              }
-            />
-            <Project
+          <Project
+            link={'https://pred1993.github.io/TodoList/#/'}
+            style={todolist}
+            title={'TodoList'}
+            description={
+              'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula lectus magna sem. '
+            }
+          />
+          <Project
+            link={'https://vlad-remnev.github.io/fridaytemp/#/login'}
             style={cards}
             title={'Cards'}
             description={

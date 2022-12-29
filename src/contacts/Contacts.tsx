@@ -52,7 +52,7 @@ const Contacts = () => {
                 <div className={styles.errors}>{formik.errors.message}</div>
               )}
               <div className={styles.submitBtn}>
-                <SuperButton style={{'width': '150px', marginTop: '20px'}}
+                <SuperButton style={{'width': '150px', marginTop: '20px', marginBottom: '20px'}}
                              type="submit"
                 >
                   Sign In

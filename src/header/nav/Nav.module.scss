@@ -13,13 +13,25 @@
     top: 0;
     height: 100vh;
     width: 200px;
-    background-color: $secondColor;
+    background-color: $bgSecondColor;
   }
+
   .list {
     margin-right: 34px;
-    & a {
-      text-decoration: none;
+
+    a {
+      cursor: pointer;
+
       @include text(20px, 300, $secondFontFamily, $textColor);
+
+      &:hover {
+        text-decoration: none;
+        color: $secondColor
+      }
+    }
+
+    .active {
+      color: $secondColor
     }
 
     &:last-child {
@@ -40,6 +52,7 @@
     transition: 2s all;
     right: 0;
   }
+
   .list {
     @media screen and (max-width: 767px) {
       margin-right: 0;

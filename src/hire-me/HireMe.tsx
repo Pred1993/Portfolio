@@ -17,7 +17,7 @@ const HireMe = () => {
           <SuperButton style={{'marginTop': '20px', 'marginBottom': '20px'}}>
           Download CV
         </SuperButton>
-          <Link text={'Here me'}/>
+          <Link text={'Here me'} link={''}/>
         </Reveal>
       </div>
     </div>
