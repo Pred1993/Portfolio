@@ -20,6 +20,7 @@
     "@types/react-fontawesome": "^1.6.5",
     "@types/react-scroll": "^1.8.5",
     "@types/yup": "^0.32.0",
+    "axios": "^1.2.2",
     "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "node-sass": "^8.0.0",
