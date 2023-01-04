@@ -34,7 +34,7 @@
         left: -63%;
       }
       @media screen and (max-width: 481px) {
-        left: -68%;
+        left: -65%;
       }
     }
 
@@ -51,7 +51,7 @@
         height: 450px;
       }
       @media screen and (max-width: 481px) {
-        height: 400px;
+        height: 350px;
       }
     }
 
@@ -80,7 +80,7 @@
           @include text(40px, 700, $secondFontFamily, $textColor)
         }
         @media screen and (max-width: 481px) {
-          @include text(34px, 700, $secondFontFamily, $textColor)
+          @include text(30px, 700, $secondFontFamily, $textColor)
         }
       }
 
@@ -92,6 +92,9 @@
         z-index: 20;
         @media screen and (max-width: 1199px) {
           text-align: center;
+        }
+        @media screen and (max-width: 481px) {
+          @include text(14px, 400, $secondFontFamily, $textColor)
         }
       }
 

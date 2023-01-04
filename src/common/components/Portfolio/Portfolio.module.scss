@@ -14,7 +14,7 @@
     @include text(70px, 800, $FontFamily, $bgSecondColor);
   }
   @media screen and (max-width: 481px) {
-    @include text(55px, 800, $FontFamily, $bgSecondColor);
+    @include text(50px, 800, $FontFamily, $bgSecondColor);
   }
   &::before {
     content: '';

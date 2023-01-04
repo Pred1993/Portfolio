@@ -17,7 +17,7 @@
       @include text(15px, 300, $secondFontFamily, $textColor);
     }
     @media screen and (max-width: 481px) {
-      @include text(12px, 300, $secondFontFamily, $textColor);
+      @include text(10px, 300, $secondFontFamily, $textColor);
     }
     .title {
     }
