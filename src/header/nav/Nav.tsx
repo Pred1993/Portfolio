@@ -16,7 +16,7 @@ const Nav: FC<NavType> = ({arr, active}) => {
                 spy={true}
                 smooth={true}
                 hashSpy={true}
-                offset={-50}
+                offset={-60}
                 duration={500}
                 delay={100}
                 isDynamic={true}

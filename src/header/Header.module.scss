@@ -8,6 +8,9 @@
   @include flex(flex, row, flex-end, center);
   position: fixed;
   z-index: 50;
+  @media screen and (max-width: 481px) {
+    height: 70px;
+  }
   .common {
     cursor: pointer;
     margin-right: 40px;
@@ -27,7 +30,7 @@
     @media screen and (max-width: 767px) {
       span {
         margin-bottom: 4px;
-        transition: 1.5s all;
+        transition: 1s all;
         &:last-child {
           margin-bottom: 0;
         }
@@ -38,7 +41,7 @@
     @media screen and (max-width: 767px) {
       span {
         margin-bottom: -2px;
-        transition: 2s all;
+        transition: 1s all;
         &:nth-child(1) {
           transform: translateY(6px) rotate(-45deg);
         }

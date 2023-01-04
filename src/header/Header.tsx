@@ -7,7 +7,7 @@ const arrNav =
     {name: 'Main', link: 'main'},
     {name: 'Skills', link: 'skills'},
     {name: 'Projects', link: 'projects'},
-    {name: 'Contacts', link: 'contacts'}
+    {name: 'Contact', link: 'contact'}
   ]
 export type NavObjectType = {
   name: string

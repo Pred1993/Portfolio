@@ -59,6 +59,9 @@
     transform: scale(1.05);
     transition: 0.5s
   }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
 }
 
 

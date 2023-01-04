@@ -27,12 +27,13 @@ const Contacts = () => {
     },
   });
   return (
-    <div className={styles.contactsPage} id={'contacts'}>
-      <Portfolio name={'Contacts'}/>
+    <div className={styles.contactsPage} id={'contact'}>
+      <Portfolio name={'Contact'}/>
         <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
-          <Title textPart1={'My '} textPart2={'contacts'}/>
-          <Reveal>
+          <Title textPart1={'Get in '} textPart2={'touch'}/>
+          <Reveal className={styles.revealContainer}>
             <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
+
               <SuperInput className={styles.name} placeholder={'Name'}
                           {...formik.getFieldProps('firstName')}
               />

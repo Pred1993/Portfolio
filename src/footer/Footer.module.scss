@@ -23,6 +23,9 @@
       @media screen and (max-width: 575px) {
         width: 70%;
       }
+      @media screen and (max-width: 481px) {
+        width: 80%;
+      }
       .square {
         @include flex(flex, row, center, center);
         width: 60px;

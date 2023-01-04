@@ -42,14 +42,14 @@
 
 .nav {
   @media screen and (max-width: 767px) {
-    transition: 3s all;
+    transition: 2s all;
     right: -100%;
   }
 }
 
 .nawAppear {
   @media screen and (max-width: 767px) {
-    transition: 2s all;
+    transition: 1s all;
     right: 0;
   }
 

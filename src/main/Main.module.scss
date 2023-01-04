@@ -33,6 +33,9 @@
       @media screen and (max-width: 991px) {
         left: -63%;
       }
+      @media screen and (max-width: 481px) {
+        left: -68%;
+      }
     }
 
     .photo {
@@ -45,7 +48,10 @@
         margin-top: 50px;
       }
       @media screen and (max-width: 617px) {
-        height: 500px;
+        height: 450px;
+      }
+      @media screen and (max-width: 481px) {
+        height: 400px;
       }
     }
 
@@ -72,6 +78,9 @@
         }
         @media screen and (max-width: 617px) {
           @include text(40px, 700, $secondFontFamily, $textColor)
+        }
+        @media screen and (max-width: 481px) {
+          @include text(34px, 700, $secondFontFamily, $textColor)
         }
       }
 

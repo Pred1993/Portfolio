@@ -13,6 +13,9 @@
   @media screen and (max-width: 767px) {
     @include text(70px, 800, $FontFamily, $bgSecondColor);
   }
+  @media screen and (max-width: 481px) {
+    @include text(55px, 800, $FontFamily, $bgSecondColor);
+  }
   &::before {
     content: '';
     position: absolute;
