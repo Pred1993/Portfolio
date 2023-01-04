@@ -10,7 +10,7 @@ import SuperButton from "../common/components/SuperButton/SuperButton";
 const HireMe = () => {
   return (
     <div className={style.hireMeBlock}>
-      <Portfolio name={'Freelancer'}/>
+      <Portfolio name={'Position'}/>
       <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
         <Title textPart1={'Available '} textPart2={'for hire'}/>
         <Reveal cascade={true}>

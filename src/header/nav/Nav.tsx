@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import styles from './Nav.module.scss';
 import {NavObjectType} from "../Header";
 import {Link} from "react-scroll";
+
 type NavType = {
   arr: Array<NavObjectType>
   active: boolean

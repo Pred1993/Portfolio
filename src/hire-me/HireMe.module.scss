@@ -5,6 +5,7 @@
   background-color: $bgColor;
   display: flex;
   position: relative;
+  z-index: 20;
   .hireMeContainer {
     width: 80%;
     @include flex(flex, column, space-evenly, center);

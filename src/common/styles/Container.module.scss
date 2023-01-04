@@ -1,5 +1,6 @@
 @import "src/common/sass/variables";
 @import "src/common/sass/mixin";
+
 .container {
   //border: 1px solid red;
   @include flex(flex, row, space-between, center);
@@ -7,4 +8,10 @@
   width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 421px) {
+    width: 95%;
+  }
 }

@@ -4,7 +4,6 @@
   background-color: $bgColor;
   position: relative;
   z-index: 20;
-
   .skillsContainer {
     @include flex(flex, column, space-between, center);
 
