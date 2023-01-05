@@ -14,10 +14,10 @@ const Nav: FC<NavType> = ({arr, active}) => {
         return <li key={index} className={styles.list}>
           <Link activeClass={styles.active}
                 to={el.link}
-                spy={true}
+                spy={false}
                 smooth={true}
                 hashSpy={true}
-                offset={-60}
+                offset={-50}
                 duration={500}
                 delay={100}
                 isDynamic={true}
