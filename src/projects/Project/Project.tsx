@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './Project.module.scss';
-import LinkComponent from "../../common/components/LinkComponent/LinkComponent";
 import {Fade} from "react-awesome-reveal";
-
+import styleLink from '../../common/components/LinkComponent/LinkComponent.module.scss';
 
 type ProjectPropsType = {
   title: string;
@@ -15,7 +14,9 @@ const Project = ({ title, description, style, link }: ProjectPropsType) => {
     <Fade delay={300}>
       <div className={styles.project}>
         <div className={styles.imgContainer} style={style}>
-          <LinkComponent text={'Look'} link={link}/>
+          <a className={styleLink.link} href={link} target='_blank'>
+            Look
+          </a>
         </div>
         <div className={styles.projectInfo}>
           <h3 className={styles.projectTitle}>{title}</h3>

@@ -21,7 +21,7 @@ const Projects = () => {
         <Title textPart1={'my '} textPart2={'projects'}/>
         <div className={styles.projects}>
           <Project
-            link={'https://pred1993.github.io/TodoList/#/'}
+            link={'https://pred1993.github.io/TodoList/#/login'}
             style={todolist}
             title={'TodoList'}
             description={

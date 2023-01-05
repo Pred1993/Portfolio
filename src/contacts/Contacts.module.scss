@@ -6,6 +6,7 @@
   background-color: $bgColor;
   display: flex;
   position: relative;
+  z-index: 40;
 
   .contactsContainer {
     @include flex(flex, column, space-evenly, center);
@@ -49,6 +50,9 @@
 
         .submitBtn {
           text-align: center;
+          @media screen and (min-width: 1295px) {
+            margin-bottom: 10px;
+          }
         }
 
         .errors {
@@ -56,6 +60,7 @@
         }
 
       }
+
       @media screen and (max-width: 767px) {
         width: 70%;
       }

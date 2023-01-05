@@ -28,7 +28,7 @@ const Footer = () => {
           {arrIcons.map((el, index) => {
             return <Reveal cascade={true}>
               <div className={styles.square} key={index}>
-                <a href={el.link} style={{textDecoration: 'none'}}>
+                <a href={el.link} style={{textDecoration: 'none'}} target='_blank'>
                   <FontAwesomeIcon className={styles.icon} icon={el.icon}
                   />
                 </a>

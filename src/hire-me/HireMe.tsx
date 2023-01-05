@@ -14,8 +14,8 @@ const HireMe = () => {
       <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
         <Title textPart1={'Available '} textPart2={'for hire'}/>
         <Reveal cascade={true}>
-            <a href='https://github.com/Pred1993/Portfolio/raw/main/src/assets/resume/ResumeArtsiomIuchanka.pdf'
-            download={'SV'}>
+            <a href='https://drive.google.com/file/d/1YOp2fSwjcqrEhZmB2Samx7d2V_Ybb_16/view?usp=share_link' target='_blank'
+            >
               <SuperButton style={{'marginTop': '20px', 'marginBottom': '20px'}}>
               Download CV
             </SuperButton>

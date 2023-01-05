@@ -7,7 +7,7 @@ type LinkPropsType = {
 }
 const LinkComponent: FC<LinkPropsType> = ({text, link}) => {
   return (
-    <a className={styles.link}>
+    <a className={styles.link} href={link} >
       <Link activeClass={styles.active}
             to={link}
             spy={true}

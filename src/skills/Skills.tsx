@@ -11,12 +11,14 @@ const skills = {
     {name: 'HTML', progress: '80%'},
     {name: 'CSS/SCSS/BEM', progress: '84%'},
     {name: 'React/Redux', progress: '81%'},
+    {name: 'STORYBOOK', progress: '80%'},
   ],
   'part2': [
     {name: 'GIT/GITHUB', progress: '75%'},
-    {name: 'TDD/STORYBOOK', progress: '85%'},
+    {name: 'TDD', progress: '85%'},
     {name: 'Axios/Postman', progress: '83%'},
-    {name: 'Material-UI/Formik', progress: '85%'},
+    {name: 'Material-UI', progress: '86%'},
+    {name: 'Formik/Yup', progress: '85%'},
   ]
 }
 const Skills = () => {
