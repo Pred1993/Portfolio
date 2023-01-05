@@ -2,7 +2,7 @@
 @import "src/common/sass/mixin";
 
 .contactsPage {
-  min-height: 62vh;
+  //min-height: 62vh;
   background-color: $bgColor;
   display: flex;
   position: relative;
@@ -23,7 +23,9 @@
         width: 100%;
         @include flex(flex, column, space-around, normal);
 
+
         .name {
+          cursor: pointer;
           background-color: $bgSecondColor;
           height: 50px;
           margin-bottom: 5px;
@@ -32,6 +34,7 @@
         }
 
         .email {
+          cursor: pointer;
           background-color: $bgSecondColor;
           height: 50px;
           margin-bottom: 5px;
@@ -40,6 +43,7 @@
         }
 
         .message {
+          cursor: pointer;
           background-color: $bgSecondColor;
           height: 100px;
           margin-bottom: 5px;

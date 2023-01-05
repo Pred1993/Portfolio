@@ -1,4 +1,4 @@
-import React, {FormEvent, useRef} from 'react';
+import React, {useState} from 'react';
 import styles from './Contacts.module.scss';
 import styleContainer from '../common/styles/Container.module.scss';
 import Portfolio from "../common/components/Portfolio/Portfolio";
@@ -9,22 +9,10 @@ import * as Yup from 'yup';
 import SuperInput from "../common/components/SuperInput/SuperInput";
 import {Reveal} from "react-awesome-reveal";
 import emailjs from '@emailjs/browser';
+import {Preloader} from "../common/components/Preloader/Preloader";
 
 const Contacts = () => {
-  const form = useRef<HTMLFormElement>(null);
-
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_ucrc7w6', 'template_uk49q98', e.target as HTMLFormElement, 'WaJg8C6QMrE2XHTdD')
-      .then((result) => {
-        debugger
-        console.log(result.text);
-        console.log('message send')
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
+  const [preloader, setPreloader] = useState(false)
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -37,15 +25,18 @@ const Contacts = () => {
       message: Yup.string().required('Required'),
     }),
     onSubmit: (values) => {
-      // console.log(values)
-      // console.log(form.current)
-      // emailjs.sendForm('service_ucrc7w6', 'template_uk49q98', form.current, 'WaJg8C6QMrE2XHTdD')
-      //   .then((result) => {
-      //     console.log(result.text);
-      //     console.log('message sent')
-      //   }, (error) => {
-      //     console.log(error.text);
-      //   });
+      setPreloader(true)
+      emailjs.send('service_ucrc7w6', 'template_uk49q98', values, 'WaJg8C6QMrE2XHTdD')
+        .then((result) => {
+          console.log(result.text);
+        })
+        .catch((error) => {
+          console.log(error.text)
+        })
+        .finally(() => {
+          setPreloader(false)
+          formik.resetForm();
+        });
     },
   });
   return (
@@ -53,45 +44,41 @@ const Contacts = () => {
       <Portfolio name={'Contact'}/>
       <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
         <Title textPart1={'Get in '} textPart2={'touch'}/>
+        {preloader && <Preloader/>}
         <Reveal className={styles.revealContainer}>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="firstName" />
-            <label>Email</label>
-            <input type="email" name="email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-          </form>
-          {/*@ts-ignore*/}
-          {/*<form ref={form} onSubmit={formik.handleSubmit} className={styles.formContainer}>*/}
+          <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
 
-          {/*  <SuperInput className={styles.name} placeholder={'firstName'}*/}
-          {/*              {...formik.getFieldProps('firstName')}*/}
-          {/*  />*/}
-          {/*  {formik.touched.firstName && formik.errors.firstName && (*/}
-          {/*    <div className={styles.errors}>{formik.errors.firstName}</div>*/}
-          {/*  )}*/}
-          {/*  <SuperInput className={styles.email} placeholder={'email'}*/}
-          {/*              {...formik.getFieldProps('email')}*/}
-          {/*  />*/}
-          {/*  {formik.touched.email && formik.errors.email && (*/}
-          {/*    <div className={styles.errors}>{formik.errors.email}</div>*/}
-          {/*  )}*/}
-          {/*  <textarea className={styles.message} placeholder={'message'}*/}
-          {/*            {...formik.getFieldProps('message')}*/}
-          {/*  />*/}
-          {/*  {formik.touched.message && formik.errors.message && (*/}
-          {/*    <div className={styles.errors}>{formik.errors.message}</div>*/}
-          {/*  )}*/}
-          {/*  <div className={styles.submitBtn}>*/}
-          {/*    <SuperButton style={{'width': '150px', marginTop: '20px'}}*/}
-          {/*                 type="submit"*/}
-          {/*    >*/}
-          {/*      Sign In*/}
-          {/*    </SuperButton>*/}
-          {/*  </div>*/}
-          {/*</form>*/}
+            <SuperInput className={styles.name} placeholder={'firstName'}
+                        disabled={preloader}
+                        {...formik.getFieldProps('firstName')}
+            />
+            {formik.touched.firstName && formik.errors.firstName && (
+              <div className={styles.errors}>{formik.errors.firstName}</div>
+            )}
+            <SuperInput className={styles.email}
+                        disabled={preloader}
+                        placeholder={'email'}
+                        {...formik.getFieldProps('email')}
+            />
+            {formik.touched.email && formik.errors.email && (
+              <div className={styles.errors}>{formik.errors.email}</div>
+            )}
+            <textarea className={styles.message}
+                      disabled={preloader}
+                      placeholder={'message'}
+                      {...formik.getFieldProps('message')}
+            />
+            {formik.touched.message && formik.errors.message && (
+              <div className={styles.errors}>{formik.errors.message}</div>
+            )}
+            <div className={styles.submitBtn}>
+              <SuperButton style={{'width': '150px', marginTop: '20px'}}
+                           type="submit"
+              >
+                Sign In
+              </SuperButton>
+            </div>
+          </form>
         </Reveal>
       </div>
     </div>
