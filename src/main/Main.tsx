@@ -36,9 +36,9 @@ const Main = () => {
             </span>
           </h1>
           <p className={styles.textDescription}>
-            Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros
-            congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula
-            lectus magna sem. '
+            I am a Belarusian who is engaged in front-end development. By the age of 29, this is the very first time I am really enjoying what I am doing!
+            <br/>
+            I chose front-end to keep my brain toned, invest my soul in interesting projects and enjoy the final result, sitting on the banks of the Neman River, drinking banana yogurt
           </p>
         </div>
       </div>

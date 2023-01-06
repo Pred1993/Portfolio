@@ -25,7 +25,7 @@ const Projects = () => {
             style={todolist}
             title={'TodoList'}
             description={
-              'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas — fusce quisque sem, amet porttitor fusce metus maecenas ligula lectus magna sem. '
+              'A project in which you can form your list of affairs, by categories, mark completed and sort. Here is implemented the main mechanism of CRUD operations (in the process of writing)'
             }
           />
           <Project
@@ -33,7 +33,7 @@ const Projects = () => {
             style={cards}
             title={'Cards'}
             description={
-              'Lorem ipsum molestie pellentesque adipiscing, amet nulla amet ipsum bibendum. Massa commodo tellus eros congue sapien, sodales in eros sed maecenas.'
+              'In this project you can create your own card sets in question - answer format and study any material on them (in the process of writing). For the convenience of the user basic front-end development tasks are used: authorization, sorting by creation date, search by name, search by quantity (double range slider), pagination, debounce, modals, etc.'
             }
           />
         </div>
