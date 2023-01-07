@@ -25,7 +25,7 @@ const Projects = () => {
             style={todolist}
             title={'TodoList'}
             description={
-              'A project in which you can form your list of affairs, by categories, mark completed and sort. Here is implemented the main mechanism of CRUD operations (in the process of writing)'
+              'A project in which you can form your list of affairs, by categories, mark completed and sort. Here is implemented the main mechanism of CRUD operations (in the process of writing).'
             }
           />
           <Project
