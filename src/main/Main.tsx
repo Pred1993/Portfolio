@@ -38,7 +38,7 @@ const Main = () => {
           <p className={styles.textDescription}>
             I am a Belarusian who is engaged in front-end development. By the age of 29, this is the very first time I am really enjoying what I am doing!
             <br/>
-            I chose front-end to keep my brain toned, invest my soul in interesting projects and enjoy the final result, sitting on the banks of the Neman River, drinking banana yogurt
+            I chose front-end to keep my brain toned, invest my soul in interesting projects and enjoy the final result, sitting on the banks of the Neman River, drinking banana yogurt.
           </p>
         </div>
       </div>
