@@ -7,18 +7,18 @@ import Portfolio from "../common/components/Portfolio/Portfolio";
 import {Reveal} from "react-awesome-reveal";
 const skills = {
   'part1': [
-    {name: 'JS/TS', progress: '85%'},
-    {name: 'HTML', progress: '80%'},
-    {name: 'CSS/SCSS/BEM', progress: '84%'},
-    {name: 'React/Redux', progress: '81%'},
-    {name: 'STORYBOOK', progress: '80%'},
+    {name: 'JS/TS', progress: '75%'},
+    {name: 'HTML', progress: '70%'},
+    {name: 'CSS/SCSS/BEM', progress: '74%'},
+    {name: 'React/Redux', progress: '71%'},
+    {name: 'STORYBOOK', progress: '70%'},
   ],
   'part2': [
-    {name: 'GIT/GITHUB', progress: '75%'},
-    {name: 'TDD', progress: '85%'},
-    {name: 'Axios/Postman', progress: '83%'},
-    {name: 'Material-UI', progress: '86%'},
-    {name: 'Formik/Yup', progress: '85%'},
+    {name: 'GIT/GITHUB', progress: '70%'},
+    {name: 'TDD', progress: '75%'},
+    {name: 'Axios/Postman', progress: '73%'},
+    {name: 'Material-UI', progress: '76%'},
+    {name: 'Formik/Yup', progress: '75%'},
   ]
 }
 const Skills = () => {
