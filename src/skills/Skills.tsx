@@ -16,7 +16,7 @@ const skills = {
   'part2': [
     {name: 'GIT/GITHUB', progress: '70%'},
     {name: 'TDD', progress: '75%'},
-    {name: 'Axios/Postman', progress: '73%'},
+    {name: 'Axios/Postman', progress: '74%'},
     {name: 'Material-UI', progress: '76%'},
     {name: 'Formik/Yup', progress: '75%'},
   ]
