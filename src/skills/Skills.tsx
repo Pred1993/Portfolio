@@ -8,9 +8,9 @@ import {Reveal} from "react-awesome-reveal";
 const skills = {
   'part1': [
     {name: 'JS/TS', progress: '76%'},
-    {name: 'HTML', progress: '71%'},
+    {name: 'HTML', progress: '72%'},
     {name: 'CSS/SCSS/BEM', progress: '74%'},
-    {name: 'React/Redux', progress: '72%'},
+    {name: 'React/Redux', progress: '73%'},
     {name: 'STORYBOOK', progress: '72%'},
   ],
   'part2': [
