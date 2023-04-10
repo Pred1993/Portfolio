@@ -1,7 +1,6 @@
 @import "../common/sass/variables";
 @import "src/common/sass/mixin";
 .projectsBlock {
-  //min-height: 90vh;
   background-color: $bgColor;
   display: flex;
   position: relative;
@@ -11,7 +10,6 @@
     @include flex(flex, column, center, center);
 
     .projects {
-      //border: 1px solid;
       height: 100%;
       width: 100%;
       @include flex(flex, row, space-between, flex-start);

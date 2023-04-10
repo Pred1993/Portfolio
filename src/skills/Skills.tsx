@@ -10,15 +10,16 @@ const skills = {
     {name: 'JS/TS', progress: '76%'},
     {name: 'HTML', progress: '72%'},
     {name: 'CSS/SCSS/BEM', progress: '74%'},
-    {name: 'React/Redux', progress: '73%'},
+    {name: 'React/Redux/Toolkit', progress: '73%'},
     {name: 'STORYBOOK', progress: '72%'},
+
   ],
   'part2': [
     {name: 'GIT/GITHUB', progress: '72%'},
     {name: 'TDD', progress: '75%'},
     {name: 'Axios/Postman', progress: '75%'},
     {name: 'Material-UI', progress: '76%'},
-    {name: 'Formik/Yup', progress: '75%'},
+    {name: 'Formik/React Hook Form', progress: '75%'},
   ]
 }
 const Skills = () => {

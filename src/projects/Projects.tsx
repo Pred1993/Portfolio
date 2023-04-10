@@ -5,6 +5,7 @@ import Project from './Project/Project';
 import Title from '../common/components/Title/Title';
 import todoImages from '../assets/image/todolist.jpg';
 import cardsImages from '../assets/image/cards.jpg';
+import libraryImages from '../assets/image/library.jpg';
 import Portfolio from '../common/components/Portfolio/Portfolio';
 
 const Projects = () => {
@@ -14,6 +15,10 @@ const Projects = () => {
   const todolist = {
     backgroundImage: `url(${todoImages})`,
   };
+  const cleverTec = {
+    backgroundImage: `url(${libraryImages})`,
+  };
+
   return (
     <div className={styles.projectsBlock} id={'projects'}>
       <Portfolio name={'Portfolio'}/>
@@ -21,7 +26,17 @@ const Projects = () => {
         <Title textPart1={'my '} textPart2={'projects'}/>
         <div className={styles.projects}>
           <Project
+            link={'https://pred1993.github.io/clever-tec/'}
+            link2={'https://github.com/Pred1993/clever-tec'}
+            style={cleverTec}
+            title={'Clever-tec'}
+            description={
+              'In this project, an online library was implemented with the ability to book, view the history of read books, leave reviews and evaluations. For the convenience of the user basic front-end development tasks are used: authorization, sorting by ratting, search by name, modals, requests to the server, etc.'
+            }
+          />
+          <Project
             link={'https://pred1993.github.io/TodoList/#/login'}
+            link2={'https://github.com/Pred1993/TodoList'}
             style={todolist}
             title={'TodoList'}
             description={
@@ -30,6 +45,7 @@ const Projects = () => {
           />
           <Project
             link={'https://vlad-remnev.github.io/fridaytemp/#/login'}
+            link2={'https://github.com/Vlad-Remnev/fridaytemp'}
             style={cards}
             title={'Cards'}
             description={

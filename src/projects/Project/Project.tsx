@@ -8,18 +8,19 @@ type ProjectPropsType = {
   description: string;
   style: any;
   link: string
+  link2: string
 };
-const Project = ({ title, description, style, link }: ProjectPropsType) => {
+const Project = ({ title, description, style, link, link2 }: ProjectPropsType) => {
   return (
     <Fade delay={300}>
       <div className={styles.project}>
         <div className={styles.imgContainer} style={style}>
-          <a className={styleLink.link} href={link} target='_blank'>
+          <a rel="noreferrer" className={styleLink.link} href={link} target='_blank'>
             Look
           </a>
         </div>
         <div className={styles.projectInfo}>
-          <h3 className={styles.projectTitle}>{title}</h3>
+          <a href={link2} className={styles.projectTitle}>{title}</a>
           <span className={styles.description}>{description}</span>
         </div>
       </div>
