@@ -27,11 +27,6 @@ const Main = () => {
                     .start()
 
                 }}
-                // options={{
-                //   strings: 'FRONTEND DEVELOPER',
-                //   autoStart: true,
-                //   loop: true,
-                // }}
               />
             </span>
           </h1>
